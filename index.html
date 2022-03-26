@@ -8,8 +8,7 @@
         <meta name="description" content="Nesta página posto artigos sobre Linguagens de Programação e Idiomas">
         <link rel="stylesheet" type="text/css" href="style/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+        
     </head>
 
 <body>
@@ -19,13 +18,13 @@
     <div id="navbar">
 
         <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction()" >Menu
-                <i class="fa fa-caret-down"></i>
+            <button class="dropbtn" onclick="myFunction()">Menu
+            <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content" id="myDropdown">
                 <a href="https://lucasdev.netlify.app/index.html" target="_blank">Blog</a>
                 <a href="https://lucasdev.netlify.app/projetos" target="_blank">Projetos</a>
-                <a href="https://lucasdev.netlify.app/sobre" target="_blank">Sobre mim</a>
+                <a href="#" class="aboutMe">Sobre mim</a>
             </div>
         </div>
 
@@ -34,7 +33,7 @@
         </div>
 
         <div id="light">
-            <i class="fa fa-lightbulb-o"></i>
+        
         </div>
 
         </div>
@@ -55,6 +54,17 @@
             </ul>
         </div>
     </div>
+
+    <div class="overlay hidden"></div>
+
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Sobre mim</h1>
+        <p>
+          Olá a todos. Me chamo Lucas e sou Desenvolvedor Front End & Freelancer apaixonado por programação. Minhas
+          ferramentas atuais são HTML | CSS & JavaScript (Ainda estou decidindo qual será a próxima Linguagem 😉).
+        </p>
+      </div>
   <main>
 
   <footer>
