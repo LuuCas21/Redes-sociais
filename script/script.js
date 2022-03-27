@@ -42,3 +42,11 @@ aboutMe.addEventListener('click', overlayShow);
 overlay.addEventListener('click', overlayHidden)
 
 
+document.addEventListener('keydown', function(e) {
+console.log(e.key);
+    if(e.key === 'Escape') {
+        if(!showModal.classList.contains('hidden')) {
+        modalHidden();
+        }
+    }
+});
