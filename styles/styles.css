@@ -34,6 +34,51 @@ header > #navbar {
     height:30px;
     /*border:1px solid black;*/
 }
+header > #navbar > #mensagemAviso {
+    width:10%;
+    height:30px;
+    /*border:1px solid white;*/
+    padding:0 10px;
+    font-size:25px;
+    color:var(--color3);
+}
+
+header #navbar > #mensagemAviso > p {
+    text-align:justify;
+}
+
+header #navbar > #mensagemAviso > button {
+    width:80px;
+    height:30px;
+    padding:0 9px;
+    font-size:25px;
+    color:var(--color3);
+    cursor:pointer;
+    background-color:var(--color1);
+    border:none;
+}
+
+section > #content > .aviso {
+    position:absolute;
+    top:0;
+    margin:40px 10px;
+    border:1px solid var(--color3);
+    border-radius:5px;
+    width:30%;
+    height:80px;
+    background-color:var(--color1);
+    color:var(--color3);
+    font-size:18px;
+    padding:8px;
+}
+
+section > #content > .aviso > p {
+    text-align:justify;
+}
+
+.hidden {
+    display:none;
+}
 
 section > #content {
     width:95%;
@@ -85,6 +130,7 @@ section > #content > #redesSociais > #meuNome > img {
     width:100%;
     height:90px;
     object-fit: cover;
+    object-position:center;
 }
 
 section > #content > #redesSociais > #meusPerfis {
@@ -248,7 +294,7 @@ footer > #footer {
     section > #content > #redesSociais > #meuNome > img {
         width:100%;
         height:90px;
-        object-fit: cover;
+        object-fit: contain;
         display:none;
     }
 
@@ -256,25 +302,106 @@ footer > #footer {
         width:100%;
         height:90px;
         object-fit: cover;
+        object-position:center;
         display:none;
         display:block;
     }
 }
 
-.Linkedin {
-    width:86%;
+@media screen and (max-width:647px) {
+    section > #content > .aviso {
+        position:absolute;
+        top:0;
+        margin:40px 10px;
+        border:1px solid var(--color3);
+        border-radius:5px;
+        width:30%;
+        height:115px;
+        background-color:var(--color1);
+        color:var(--color3);
+        font-size:18px;
+        padding:8px;
+    }
 }
 
-.Instagram {
-    width:86%;
+@media screen and (max-width:458px) {
+    section > #content > .aviso {
+        position:absolute;
+        top:0;
+        margin:40px 10px;
+        border:1px solid var(--color3);
+        border-radius:5px;
+        width:30%;
+        height:145px;
+        background-color:var(--color1);
+        color:var(--color3);
+        font-size:18px;
+        padding:8px;
+    }
 }
 
-.GitHub {
-    width:86%;
+@media screen and (max-width:366px) {
+    section > #content > .aviso {
+        position:absolute;
+        top:0;
+        margin:40px 10px;
+        border:1px solid var(--color3);
+        border-radius:5px;
+        width:30%;
+        height:170px;
+        background-color:var(--color1);
+        color:var(--color3);
+        font-size:18px;
+        padding:8px;
+    }
 }
 
-.Telegram {
-    width:86%;
+@media screen and (max-width:347px) {
+    section > #content > .aviso {
+        position:absolute;
+        top:0;
+        margin:40px 10px;
+        border:1px solid var(--color3);
+        border-radius:5px;
+        width:30%;
+        height:200px;
+        background-color:var(--color1);
+        color:var(--color3);
+        font-size:18px;
+        padding:8px;
+    }
+}
+
+@media screen and (max-width:316px) {
+    section > #content > .aviso {
+        position:absolute;
+        top:0;
+        margin:40px 10px;
+        border:1px solid var(--color3);
+        border-radius:5px;
+        width:30%;
+        height:230px;
+        background-color:var(--color1);
+        color:var(--color3);
+        font-size:18px;
+        padding:8px;
+    }
+}
+
+@media screen and (max-width:250px) {
+    section > #content > .aviso {
+        position:absolute;
+        top:0;
+        margin:40px 10px;
+        border:1px solid var(--color3);
+        border-radius:5px;
+        width:30%;
+        height:260px;
+        background-color:var(--color1);
+        color:var(--color3);
+        font-size:18px;
+        padding:8px;
+    }
 }
 
 #nome3 {

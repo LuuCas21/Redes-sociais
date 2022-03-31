@@ -11,6 +11,10 @@ const linkedin2 = document.querySelector('.fa-linkedin');
 const instagram2 = document.querySelector('.fa-instagram');
 const github2 = document.querySelector('.fa-github');
 
+const caixaAviso = document.querySelector('.aviso');
+const bTnOpen = document.querySelector('#guia');
+const container = document.querySelector('#container');
+
 linkedin.addEventListener('click', function() {
     window.open('https://www.linkedin.com/in/lucassouza200/');
 });
@@ -46,3 +50,16 @@ const anchorTelegram = function() {
 const anchorEmail = function() {
     window.location.href = 'mailto:Tchango7000@gmail.com';
 }
+
+bTnOpen.addEventListener('click', function() {
+    caixaAviso.classList.toggle('hidden');
+})
+
+document.addEventListener('keydown', function(event) {
+    console.log(event.key);
+
+    if(event.key === 'Escape') {
+        caixaAviso.classList.add('hidden');
+    }
+})
+
