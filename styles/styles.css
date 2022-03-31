@@ -1,0 +1,282 @@
+/* Documento CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+:root {
+    --color1:#00204a;
+    --color2:#005792;
+    --color3:#448ef6;
+    --color4:#fdb44b;
+    --color5:#386dbd;
+    --color6:#000000;
+}
+
+body {
+    box-sizing:border-box;
+    background-color:var(--color1);
+    font-family:'Sarala', Arial, Helvetica, sans-serif;
+    font-size:17px;
+}
+
+#container {
+    width:100%;
+    min-height:520px;
+    margin:auto;
+}
+
+header > #navbar {
+    width:100%;
+    height:30px;
+    /*border:1px solid black;*/
+}
+
+section > #content {
+    width:95%;
+    height:100%;
+    min-height:800px;
+    /*border:1px solid black;*/
+    margin:0 auto;
+    margin-top:10px;
+}
+
+section > #content > #foto {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:2px solid var(--color3);
+    margin:0 auto;
+    margin-top:5px;
+}
+
+section > #content > #foto {
+    background-image:url('/img/Lucas.jpg');
+    background-size:cover;
+}
+
+section > #content > #redesSociais {
+    width:60%;
+    height:600px;
+    /*border:1px solid var(--color3);*/
+    border-radius:5px;
+    margin:0 auto;
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+}
+
+section > #content > #redesSociais > #meuNome {
+    width:80%;
+    height:90px;
+    border:2px solid var(--color3);
+    border-radius:5px;
+    margin:0 auto;
+    margin-top:10px;
+    /*background-image:url('/img/myName.png');*/
+    background-size:auto;
+    background-repeat:no-repeat;
+}
+
+section > #content > #redesSociais > #meuNome > img {
+    width:100%;
+    height:90px;
+    object-fit: cover;
+}
+
+section > #content > #redesSociais > #meusPerfis {
+    width:90%;
+    height:375px;
+    /*border:1px solid black;*/
+    margin:0 auto;
+    margin-top:10px;
+}
+
+section > #content > #redesSociais > #meusPerfis > #links {
+    width:85%;
+    height:350px;
+    /*border:1px solid white;*/
+    margin:0 auto;
+    margin-top:10px;
+}
+
+section > #content > #redesSociais > #meusPerfis > #links > ul li {
+    list-style-type:none;
+    background-color:var(--color3);
+    border-radius:5px;
+    text-align:center;
+    line-height:60px;
+    margin-top:8px;
+    cursor:pointer;
+    transition:all 0.2s;
+}
+
+section > #content > #redesSociais > #meusPerfis > #links > ul li:hover {
+    transform:scaleX(1.1);
+}
+
+section > #content > #redesSociais > #meusPerfis > #links > ul {
+    margin-top:45px;
+}
+
+section > #content > #redesSociais > #meusPerfis > #links > ul li > a {
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    color:var(--color6);
+}
+
+section > #content > #redesSociais > #icones {
+    width:90%;
+    height:80px;
+    /*border:1px solid black;*/
+    margin:0 auto;
+    margin-top:10px;
+}
+
+section > #content > #redesSociais > #icones > #icones2 > i {
+    font-size:30px;
+    
+    padding:8px;
+    color:var(--color3);
+    cursor:pointer;
+    display:inline-block;
+    margin:0 auto;
+}
+
+section > #content > #redesSociais > #icones > #icones2 > i:hover {
+    transform:scaleX(1.2);
+}
+
+section > #content > #redesSociais > #icones > #icones2 {
+    width:35%; /* 32.5% */
+    height:50px;
+    border:2px solid var(--color3);
+    text-align:center;
+    border-radius:5px;
+    margin:0 auto;
+}
+
+footer > #footer {
+    top:0;
+    width:100%;
+    height:30px;
+    /*border:1px solid black;*/
+    margin-top:10px;
+}
+
+/* Media Queries*/
+
+@media screen and (max-width:1307px) {
+    section > #content > #redesSociais > #icones > #icones2 {
+        width:32.5%;
+        height:90px;
+        border:2px solid var(--color3);
+        text-align:center;
+        border-radius:5px;
+        margin:0 auto;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+    section > #content > #redesSociais > #icones > #icones2 {
+        width:32.5%;
+        height:145px;
+        border:2px solid var(--color3);
+        text-align:center;
+        border-radius:5px;
+        margin:0 auto;
+        margin:auto;
+    }
+
+
+}
+
+@media screen and (max-width:530px) {
+    section > #content > #redesSociais > #icones > #icones2 {
+        width:32.5%;
+        height:230px;
+        border:2px solid var(--color3);
+        text-align:center;
+        border-radius:5px;
+        margin:0 auto;
+    }
+
+
+}
+
+@media screen and (max-width:551px) {
+    section > #content > #redesSociais > #icones > #icones2 {
+        width:32.5%;
+        height:200px;
+        border:2px solid var(--color3);
+        text-align:center;
+        border-radius:5px;
+        margin:0 auto;
+    }
+
+}
+
+@media screen and (max-width:525px) {
+    section > #content > #redesSociais > #icones > #icones2 {
+        width:32.5%;
+        height:230px;
+        border:2px solid var(--color3);
+        text-align:center;
+        border-radius:5px;
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    section > #content > #redesSociais > #icones > #icones2 {
+        width:32.5%;
+        height:230px;
+        border:2px solid var(--color3);
+        text-align:center;
+        border-radius:5px;
+        margin:0 auto;
+    }
+}
+
+@media screen and (max-width:1160px) {
+    section > #content > #redesSociais > #meuNome > img {
+        width:100%;
+        height:90px;
+        object-fit: cover;
+        display:none;
+    }
+
+    section > #content > #redesSociais > #meuNome > #nome3 {
+        width:100%;
+        height:90px;
+        object-fit: cover;
+        display:none;
+        display:block;
+    }
+}
+
+.Linkedin {
+    width:86%;
+}
+
+.Instagram {
+    width:86%;
+}
+
+.GitHub {
+    width:86%;
+}
+
+.Telegram {
+    width:86%;
+}
+
+#nome3 {
+    display:none;
+}
